@@ -19,5 +19,5 @@ B.2: A[4] = 5 == x.
 
 
 Output: 
-Tìm thấy khóa x tại vị trí i = 4. Dừng kết thúc
+Tìm thấy khóa x tại vị trí i = 4. Dừng kết thúc.
 
