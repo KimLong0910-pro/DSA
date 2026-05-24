@@ -2,7 +2,8 @@ Tìm kiếm tuyến tính không bắt buộc mảng phải được sắp xếp
 
 Giải thích:
 
-Thuật toán này hoạt động bằng cách duyệt lần lượt từng phần tử trong mảng từ đầu đến cuối và so sánh với giá trị x cần tìm.
+Thuật toán này hoạt động bằng cách duyệt lần lượt từng phần tử 
+trong mảng từ đầu đến cuối và so sánh với giá trị x cần tìm.
 
 Do kiểm tra từng phần tử nên dù mảng:
 - đã sắp xếp

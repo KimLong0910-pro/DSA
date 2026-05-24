@@ -1,5 +1,6 @@
 Thuật toán tìm kiếm tuyến tính:
-- Hoạt động bằng cách duyệt lần lượt từng phần tử trong mảng từ đầu đến cuối để kiểm tra phần tử cần tìm có xuất hiện trong mảng hay không.
+- Hoạt động bằng cách duyệt lần lượt từng phần tử trong mảng 
+từ đầu đến cuối để kiểm tra phần tử cần tìm có xuất hiện trong mảng hay không.
 - Khi duyệt gặp phần từ bằng giá trị cần tìm thì trả về vị trí của phần tử đó.
 - Khi duyệt hết mảng vẫn không tìm thấy sẽ trả kết luận phần tử không tồn tại trong mảng.
 
