@@ -1,14 +1,14 @@
 def ten_sv(ds, x):
+    x = x.upper()
     for i in range(len(ds)):
-        if ds[i] == x: 
+        if ds[i].upper() == x:
             return i
-        
-    else: 
+    else:
         return -1
 
 
-ds = ["An", "Bình", "Châu"]
-x = input('Nhập tên: ').title()
+ds = ["An", "Bình", "Châu", "long", "LINH"]
+x = input("Nhập tên: ")
 
 kqua = ten_sv(ds, x)
-print(f'vị trí: {kqua}')
+print(f"Vị trí: {kqua}")
