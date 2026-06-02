@@ -1,4 +1,4 @@
-def gas_station(x, k):
+def tram_xang(x, k):
     left = 0
     right = x[-1] - x[0]
 
@@ -20,5 +20,5 @@ def gas_station(x, k):
 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 k = 9
-khoang_cach = gas_station(x, k)
+khoang_cach = tram_xang(x, k)
 print(f"Khoảng cách lớn nhất nhỏ nhất: {khoang_cach:.6f}")
