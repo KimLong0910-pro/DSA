@@ -1,9 +1,8 @@
 def koko(pile, h):
-    left = 0
-    right = len(pile) - 1
-    mid = 0
+    left = 1
+    right = max(pile)
 
-    while left <= right:
+    while left < right:
         mid = (left + right) // 2
         total_time = 0
 

@@ -1,7 +1,6 @@
 def ship_packages(w, D):
     left = max(w)
     right = sum(w)
-    mid = 0
 
     while left < right:
         mid = (left + right) // 2

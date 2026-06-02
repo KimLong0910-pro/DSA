@@ -1,7 +1,6 @@
 def split_array(a, k):
     left = max(a)
     right = sum(a)
-    mid = 0
 
     while left < right:
         mid = (left + right) // 2

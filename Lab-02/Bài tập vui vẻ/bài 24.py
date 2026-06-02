@@ -1,7 +1,6 @@
 def gas_station(x, k):
     left = 0
     right = x[-1] - x[0]
-    mid = 0
 
     while right - left > 1e-6:
         mid = (left + right) / 2

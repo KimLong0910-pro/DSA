@@ -1,7 +1,6 @@
 def book_allocation(p, m):
     left = max(p)
     right = sum(p)
-    mid = 0
 
     while left < right:
         mid = (left + right) // 2

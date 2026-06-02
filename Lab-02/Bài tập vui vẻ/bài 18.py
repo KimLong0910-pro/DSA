@@ -1,7 +1,6 @@
 def kth_missing(a, k):
     left = 0
     right = len(a)
-    mid = 0
 
     while left < right:
         mid = (left + right) // 2

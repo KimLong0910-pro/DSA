@@ -3,7 +3,6 @@ def magnetic_force(x, m):
 
     left = 1
     right = x[-1] - x[0]
-    mid = 0
 
     while left < right:
         mid = (left + right + 1) // 2
