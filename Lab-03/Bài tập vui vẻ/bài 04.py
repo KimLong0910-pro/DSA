@@ -1,15 +1,15 @@
 def bubble_sort(a):
     n = len(a)
-    so_lan_doi = 0 
-    for i in range(n):
+    lan_so_sanh = 0
+    for i in range(n - 1):
         for j in range(n - 1 - i):
             if a[j] > a[j + 1]:
                 a[j], a[j + 1] = a[j + 1], a[j]
-                so_lan_doi += 1
-            
-    return so_lan_doi
+                lan_so_sanh += 1
+
+    return lan_so_sanh
 
 
-a = [3, 2, 1]
+a = [3,2,1]
 kqua = bubble_sort(a)
 print(kqua)
