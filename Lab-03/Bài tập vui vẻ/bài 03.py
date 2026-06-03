@@ -9,5 +9,5 @@ def bubble_sort(a):
 
 
 a = [5, 1, 4, 2, 8]
-kqua1 = bubble_sort(a)
-print(kqua1)
+kqua = bubble_sort(a)
+print(kqua)
