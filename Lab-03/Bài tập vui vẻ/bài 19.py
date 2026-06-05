@@ -10,10 +10,10 @@ def early_exit(a):
                 a[j], a[j + 1] = a[j + 1], a[j]
                 da_doi_cho = True
         
-        if not da_doi_cho:
-            break
-        else: 
+        if da_doi_cho:
             so_luot += 1
+        else: 
+            break
             
 
     return so_luot

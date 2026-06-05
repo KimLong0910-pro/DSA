@@ -5,10 +5,12 @@ def early_exit(a):
     for i in range(n - 1):
         da_doi_cho = False
         so_luot += 1
+        
         for j in range(n - 1 - i):
             if a[j] > a[j + 1]:
                 a[j], a[j + 1] = a[j + 1], a[j]
                 da_doi_cho = True
+        
         if not da_doi_cho:
             break
 
