@@ -1,5 +1,6 @@
 def dem_nghich_the(a):
     def merge_sort(arr):
+
         if len(arr) <= 1:
             return arr, 0
 
