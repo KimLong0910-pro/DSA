@@ -9,7 +9,7 @@ def dem_nghich_the(a):
         right, count_right = merge_sort(arr[mid:])
 
         i = j = 0
-        dem = count_left + count_right
+        count = count_left + count_right
         kqua = []
 
         while i < len(left) and j < len(right):
@@ -18,17 +18,17 @@ def dem_nghich_the(a):
                 i += 1
             else:
                 kqua.append(right[j])
-                dem += len(left) - i
+                count += len(left) - i
                 j += 1
 
         kqua.extend(left[i:])
         kqua.extend(right[j:])
 
-        return kqua, dem
+        return kqua, count
 
-    _, dem = merge_sort(a)
+    _, count = merge_sort(a)
 
-    return dem
+    return count
 
 
 a = [2, 3, 1]

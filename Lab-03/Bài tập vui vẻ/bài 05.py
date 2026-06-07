@@ -1,6 +1,7 @@
 def bubble_sort(a):
     n = len(a)
     so_lan_so_sanh = 0
+    
     for i in range(n-1):
         for j in range(n - 1 - i):
             so_lan_so_sanh += 1

@@ -9,6 +9,7 @@ def early_exit(a):
             if a[j] > a[j + 1]:
                 a[j], a[j + 1] = a[j + 1], a[j]
                 da_doi_cho = True
+        
         if not da_doi_cho:
             break
 

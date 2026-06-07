@@ -1,6 +1,5 @@
 def thong_ke(a):
     n = len(a)
-
     so_lan_so_sanh = 0
     swap = 0
 

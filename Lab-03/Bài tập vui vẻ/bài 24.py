@@ -3,7 +3,6 @@ def so_luot_toi_thieu(ban_dau, muc_tieu):
     n = len(a)
 
     for i in range(n):
-
         if a == muc_tieu:
             return i
 
