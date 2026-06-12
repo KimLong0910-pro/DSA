@@ -9,6 +9,8 @@ def insertion_s(a):
             a[j + 1] = a[j]
             j = j - 1
         a[j + 1] = key
+    
+    return a
 
 
 a = [5, 2, 4, 6, 1]
