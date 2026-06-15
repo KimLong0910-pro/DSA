@@ -1,3 +1,6 @@
+import heapq
+
+
 # Partial Selection
 def partial_selection(a, k):
     n = len(a)
@@ -21,9 +24,6 @@ print(partial_selection(a.copy(), k))
 
 
 # Heap
-import heapq
-
-
 def heap_k_smallest(a, k):
     heapq.heapify(a)
 
