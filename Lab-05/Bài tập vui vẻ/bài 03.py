@@ -1,29 +1,29 @@
-def dijkstra(graph, start):
-    n = len(graph)
-    dist = [float("inf")] * n
+def dijkstra(do_thi, bdau):
+    n = len(do_thi)
+    khoang_cach = [float("inf")] * n
     visited = [False] * n
-    dist[start] = 0
+    khoang_cach[bdau] = 0
 
     for _ in range(n):
         u = -1
 
         for i in range(n):
-            if not visited[i] and (u == -1 or dist[i] < dist[u]):
+            if not visited[i] and (u == -1 or khoang_cach[i] < khoang_cach[u]):
                 u = i
 
-        if dist[u] == float("inf"):
+        if khoang_cach[u] == float("inf"):
             break
 
         visited[u] = True
 
-        for v, w in graph[u]:
-            if not visited[v] and dist[u] + w < dist[v]:
-                dist[v] = dist[u] + w
+        for v, w in do_thi[u]:
+            if not visited[v] and khoang_cach[u] + w < khoang_cach[v]:
+                khoang_cach[v] = khoang_cach[u] + w
 
-    return dist
+    return khoang_cach
 
 
-graph = [
+g1 = [
     [(1, 3), (2, 1)],
     [(0, 3), (2, 2), (3, 4)],
     [(0, 1), (1, 2), (3, 3)],
@@ -32,5 +32,5 @@ graph = [
     [(4, 2)],
 ]
 
-dist = dijkstra(graph, 0)
-print(dist)
+khoang_cach = dijkstra(g1, 0)
+print(khoang_cach)
