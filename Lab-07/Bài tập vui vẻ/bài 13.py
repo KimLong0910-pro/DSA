@@ -16,4 +16,5 @@ def mergeIntervals(khoang_giao_nhau):
     return kqua
 
 khoang_giao_nhau = [[1, 3], [2, 6], [8, 10]]
+
 print(mergeIntervals(khoang_giao_nhau))

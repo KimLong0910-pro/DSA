@@ -4,7 +4,7 @@ class Node:
         self.next = None
 
 
-def tim_giua(head):
+def tim_mid(head):
     slow = head
     fast = head.next
 
@@ -36,21 +36,21 @@ def merge_sort(head):
     if head is None or head.next is None:
         return head
 
-    giua = tim_giua(head)
-    nua_phai = giua.next
-    giua.next = None
+    mid = tim_mid(head)
+    nua_phai = mid.next
+    mid.next = None
 
-    trai = merge_sort(head)
-    phai = merge_sort(nua_phai)
+    left = merge_sort(head)
+    right = merge_sort(nua_phai)
 
-    return merge(trai, phai)
+    return merge(left, right)
 
 
 def printList(head):
-    hien_tai = head
-    while hien_tai:
-        print(hien_tai.gia_tri, end=" -> ")
-        hien_tai = hien_tai.next
+    now = head
+    while now:
+        print(now.gia_tri, end=" -> ")
+        now = now.next
     print("null")
 
 

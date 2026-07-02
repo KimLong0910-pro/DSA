@@ -6,7 +6,7 @@ class Node:
 
 def cong_hai_so(l1, l2):
     dummy = Node(0)
-    hien_tai = dummy
+    now = dummy
     carry = 0
 
     while l1 or l2 or carry:
@@ -21,8 +21,8 @@ def cong_hai_so(l1, l2):
             l2 = l2.next
 
         carry = tong // 10
-        hien_tai.next = Node(tong % 10)
-        hien_tai = hien_tai.next
+        now.next = Node(tong % 10)
+        now = now.next
 
     return dummy.next
 

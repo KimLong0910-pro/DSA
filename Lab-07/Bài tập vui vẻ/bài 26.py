@@ -33,17 +33,17 @@ class DoublyLinkedList:
         self.tail = nut_moi
 
     def printForward(self):
-        hien_tai = self.head
-        while hien_tai:
-            print(hien_tai.gia_tri, end=" <-> ")
-            hien_tai = hien_tai.next
+        now = self.head
+        while now:
+            print(now.gia_tri, end=" <-> ")
+            now = now.next
         print("null")
 
     def printBackward(self):
-        hien_tai = self.tail
-        while hien_tai:
-            print(hien_tai.gia_tri, end=" <-> ")
-            hien_tai = hien_tai.prev
+        now = self.tail
+        while now:
+            print(now.gia_tri, end=" <-> ")
+            now = now.prev
         print("null")
 
 

@@ -24,10 +24,10 @@ def xoa_k_tu_cuoi(head, k):
 
 
 def printList(head):
-    hien_tai = head
-    while hien_tai:
-        print(hien_tai.gia_tri, end=" -> ")
-        hien_tai = hien_tai.next
+    now = head
+    while now:
+        print(now.gia_tri, end=" -> ")
+        now = now.next
     print("null")
 
 

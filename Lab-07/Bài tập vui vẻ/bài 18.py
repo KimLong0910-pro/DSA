@@ -20,28 +20,28 @@ class LinkedList:
             self.head = nut_moi
             return
 
-        hien_tai = self.head
-        while hien_tai.next:
-            hien_tai = hien_tai.next
+        now = self.head
+        while now.next:
+            now = now.next
 
-        hien_tai.next = nut_moi
+        now.next = nut_moi
 
     def printList(self):
-        hien_tai = self.head
-        while hien_tai:
-            print(hien_tai.gia_tri, end=" -> ")
-            hien_tai = hien_tai.next
+        now = self.head
+        while now:
+            print(now.gia_tri, end=" -> ")
+            now = now.next
         print("null")
 
 def tim_kiem(head, x):
     vi_tri = 0
-    hien_tai = head
+    now = head
 
-    while hien_tai:
-        if hien_tai.gia_tri == x:
+    while now:
+        if now.gia_tri == x:
             return vi_tri
         vi_tri += 1
-        hien_tai = hien_tai.next
+        now = now.next
 
     return -1
 

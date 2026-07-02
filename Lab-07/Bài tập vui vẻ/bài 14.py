@@ -18,7 +18,6 @@ class DynamicMatrix:
 
 
 ma_tran = DynamicMatrix(2, 2)
-
 ma_tran.set(0, 1, 7)
 ma_tran.addRow()
 ma_tran.addCol()
