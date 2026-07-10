@@ -1,48 +1,48 @@
-# # Cách 1:
-# stack = []
+# Cách 1:
+stack = []
 
-# stack.append(1)
-# stack.append(2)
-# stack.append(3)
+stack.append(1)
+stack.append(2)
+stack.append(3)
 
-# print(f"top1: {stack[-1]}")
-# print(f"pop1: {stack.pop()}")
-# print(f"isEmpty1: {len(stack) == 0}")
-
-
-# # Cách 2:
-# stack2 = []
+print(f"top1: {stack[-1]}")
+print(f"pop1: {stack.pop()}")
+print(f"isEmpty1: {len(stack) == 0}")
 
 
-# def push(data):
-#     stack2.append(data)
+# Cách 2:
+stack2 = []
 
 
-# def pop():
-#     if len(stack2) == 0:
-#         return None
-#     else:
-#         return stack2.pop()
+def push(data):
+    stack2.append(data)
 
 
-# def top():
-#     if len(stack2) == 0:
-#         return None
-#     else:
-#         return stack2[-1]
+def pop():
+    if len(stack2) == 0:
+        return None
+    else:
+        return stack2.pop()
 
 
-# def isEmpty():
-#     return len(stack2) == 0
+def top():
+    if len(stack2) == 0:
+        return None
+    else:
+        return stack2[-1]
 
 
-# push(1)
-# push(2)
-# push(3)
-# print(stack2)
-# print(f"pop2: {pop()}")
-# print(f"top2: {top()}")
-# print(f"isEmpty2: {isEmpty()}")
+def isEmpty():
+    return len(stack2) == 0
+
+
+push(1)
+push(2)
+push(3)
+print(stack2)
+print(f"pop2: {pop()}")
+print(f"top2: {top()}")
+print(f"isEmpty2: {isEmpty()}")
 
 
 # Cách 3
