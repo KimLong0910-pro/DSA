@@ -11,6 +11,6 @@ def insertion_s(a):
         a[j + 1] = key
 
 
-a = [5, 2, 4, 6, 1, 3]
+a = [23, 7, 21, 28, 19, 12, 9, 22, 27]
 insertion_s(a)
 print(a)
